@@ -7,8 +7,10 @@ __all__ = (
     'PY36',
     'byte_types',
     'is_unicode',
-    'from_unicode'
+    'from_unicode',
+    'to_unicode',
 )
+
 
 PY2 = (sys.version_info[0] == 2)
 PY3 = (sys.version_info[0] >= 3)
@@ -29,3 +31,7 @@ def is_unicode(value):
 
 def from_unicode(value):
     return value.encode('utf-8') if is_unicode(value) else value
+
+
+def to_unicode(value):
+    return value if is_unicode(value) else value.decode('utf-8')
