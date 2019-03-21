@@ -33,5 +33,5 @@ def from_unicode(value):
     return value.encode('utf-8') if is_unicode(value) else value
 
 
-def to_unicode(value):
-    return value if is_unicode(value) else value.decode('utf-8')
+def to_unicode(value, encoding='utf-8'):
+    return value if is_unicode(value) else value.decode(encoding)
