@@ -71,6 +71,13 @@ if PY36:
                 self.clear()
                 self.update(new_dict)
 
+        @property
+        def inverse(self):
+            inversion = odict()
+            for k, v in self:
+                inversion.append(v, k)
+            return inversion
+
         def append(self, key, value):
             dict.__setitem__(self, key, value)
 
@@ -140,6 +147,13 @@ else:
                 if key in self._keys_:
                     self._keys_.remove(key)
                 self._keys_.insert(index, key)
+
+        @property
+        def inverse(self):
+            inversion = odict()
+            for k, v in self.items():
+                inversion.append(v, k)
+            return inversion
 
         def append(self, key, value):
             dict.__setitem__(self, key, value)
