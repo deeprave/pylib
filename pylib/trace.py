@@ -74,7 +74,7 @@ def setup_logging(log_name=None, log_path=None, format=None,
     console_level = log_level if console_level is None else console_level
     file_level = log_level if file_level is None else file_level
     rootLogger = logging.getLogger()
-    logFormatter = logging.Formatter('%(asctime)s %(levelname)8s %(message)s' if format is None else format)
+    logFormatter = logging.Formatter('%(asctime)s %(levelname)8s %(module)12s:%(lineno)03d %(message)s' if format is None else format)
     if log_name is not None:
         logPath = log_name if log_path is None else os.path.join(log_path, log_name)
         fileHandler = logging.FileHandler(logPath)
