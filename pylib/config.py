@@ -5,6 +5,7 @@ retrieve values in a flattened dot separated key style
 """
 import json
 import sys
+import six
 from .bufferio import BufferIO
 
 import yaml
@@ -89,19 +90,20 @@ def _make_config_object(obj, raise_errors):
 
 
 def _parse_config(stream, raise_errors=None, as_json=False):
-    # type: (file, bool, bool) -> attrdict
+    # type: (Union[file, BufferIO], bool, bool) -> attrdict
     try:
         parsed = json.load(stream) if as_json else yaml.safe_load(stream=stream)
-    except Exception:
-        raise JsonParseException("JSON parse error") if as_json else YamlParseException("YAML parse error")
+    except Exception as exc:
+        raise JsonParseException("{}: JSON parse error".format(exc)) \
+            if as_json else \
+            YamlParseException("{}: YAML parse error".format(exc))
     return config(parsed, raise_errors=raise_errors)
 
 
-def parse_config(text=None, stream=None, raise_errors=False, as_json=False):
-    # type: (str, file, bool, bool) -> attrdict
-    if text is None:
-        if stream is None:
-            raise ValueError('Specify text or file arg')
+def parse_config(stream=None, raise_errors=False, as_json=False):
+    # type: (Union[file, BufferIO, str], bool, bool) -> attrdict
     if stream is None:
-        stream = BufferIO(text)
+        raise ValueError('Requires text or file type for config input')
+    if isinstance(stream, six.string_types):
+        stream = BufferIO(stream)
     return _parse_config(stream, raise_errors=raise_errors, as_json=as_json)
