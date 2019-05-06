@@ -1,0 +1,1513 @@
+{
+    "DEVICES": [
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "AAALDP",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "AAALDP"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "APOLLO",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "ACCOUNTS": {},
+                "CUSTOMER SUBSCRIPTIONS": {},
+                "CUSTOMERS": {},
+                "FRIENDS 'N' FAMILY LISTS": {},
+                "SPEND LIMITS": {}
+            },
+            "DEVICE_TYPE": "APOLLO"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "AUSMIC",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {
+                "ESN-Table": {},
+                "MedMQResponse-Table": {},
+                "Model-Table": {}
+            },
+            "DEVICE_TYPE": "AUS"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "AUSSS1",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {
+                "ESN-Table": {},
+                "MedMQResponse-Table": {},
+                "Model-Table": {}
+            },
+            "DEVICE_TYPE": "AUS"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "AUSSS2",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {
+                "ESN-Table": {},
+                "MedMQResponse-Table": {},
+                "Model-Table": {}
+            },
+            "DEVICE_TYPE": "AUS"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "BAM",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "BAM"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "BAM2",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "BAM"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "BAMMO1",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "BAMMOB"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "BAMMOB",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "BAMMOB"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "BLKBRY",
+            "DEVICE_EMULATOR_VERSION": "1.1",
+            "DEVICE_STATE": {
+                "SUBSCRIBERS": {}
+            },
+            "DEVICE_TYPE": "BLKBRY"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "BSC001",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "BSC"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "BSC002",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "BSC"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "CDB",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "437111171": {
+                    "FACILITIES": {
+                        "APN": {
+                            "1": {
+                                "apnId": 1,
+                                "apnType": "3G4G",
+                                "eqosId": 22,
+                                "gppDtp": 7,
+                                "ipv4Add": "0.0.0.0",
+                                "pdpCh": "",
+                                "vpaa": false
+                            },
+                            "10": {
+                                "apnId": 10,
+                                "apnType": "3G4G",
+                                "eqosId": 15,
+                                "gppDtp": 7,
+                                "ipv4Add": "0.0.0.0",
+                                "pdpCh": "",
+                                "vpaa": false
+                            },
+                            "2": {
+                                "apnId": 2,
+                                "apnType": "3G4G",
+                                "eqosId": 8,
+                                "gppDtp": 7,
+                                "ipv4Add": "0.0.0.0",
+                                "pdpCh": "",
+                                "vpaa": false
+                            },
+                            "247": {
+                                "apnId": 247,
+                                "apnType": "3G4G",
+                                "eqosId": 22,
+                                "gppDtp": 0,
+                                "ipv4Add": "0.0.0.0",
+                                "pdpCh": "",
+                                "vpaa": false
+                            },
+                            "31": {
+                                "apnId": 31,
+                                "apnType": "3G4G",
+                                "eqosId": 5,
+                                "gppDtp": 1,
+                                "ipv4Add": "0.0.0.0",
+                                "pdpCh": "",
+                                "vpaa": false
+                            },
+                            "56": {
+                                "apnId": 56,
+                                "apnType": "3G4G",
+                                "eqosId": 15,
+                                "gppDtp": 7,
+                                "ipv4Add": "0.0.0.0",
+                                "pdpCh": "",
+                                "vpaa": false
+                            }
+                        },
+                        "CBA_LEVEL": {
+                            "LEVEL": "BAR_IDD"
+                        },
+                        "CBA_LEVELK": {
+                            "CUSTOMER": {
+                                "CONTEXT": "CUSTOMER",
+                                "LEVEL": "BAR_IDD"
+                            }
+                        },
+                        "CRM": {
+                            "NAME": 4
+                        },
+                        "EPAYTYPE": {
+                            "TYPE": "SUBSCRIPTION_RETAIL"
+                        },
+                        "INTPARTY": {
+                            "NAME": "B2CConsumerAndSmallBusiness"
+                        },
+                        "MMSC": {
+                            "Blacklist": "",
+                            "Class": 20,
+                            "Level": 1
+                        },
+                        "PCRFMODEC": {
+                            "MODE": 1
+                        },
+                        "PRBTBAR": {},
+                        "SAPCPolicy": {
+                            "DEFAULT": {
+                                "PolicyName": "DEFAULT"
+                            },
+                            "MMS": {
+                                "PolicyName": "MMS"
+                            },
+                            "REDEMPTION": {
+                                "PolicyName": "REDEMPTION"
+                            },
+                            "VOLTE": {
+                                "PolicyName": "VOLTE"
+                            }
+                        },
+                        "VIDEO_BAR": {},
+                        "VOLTE_NORM": {}
+                    },
+                    "SERVICE_BARS": {
+                        "content_type": "AGE",
+                        "facility_name": "",
+                        "reason": "SRQ"
+                    },
+                    "SERVICE_DEVICES": {},
+                    "createDate": "2019-04-29Z",
+                    "mobileIMSI": "505010393000391",
+                    "mobileUID": 1,
+                    "paymentType": "Postpaid",
+                    "portedFlag": false,
+                    "serviceCarrierCode": 11,
+                    "serviceNumber": 437111171,
+                    "serviceProviderId": 2,
+                    "serviceTechnology": "THREE_G",
+                    "serviceTypeNumber": 29,
+                    "status": "AC",
+                    "uuid": "74ebdc86-5edb-40b1-b369-c10393000359"
+                },
+                "AMSISDNS": {},
+                "DEVICE_TYPE_CAPABILITY": {},
+                "SERVICE_GROUP_MEMBERSHIP": {},
+                "TAC_BLACKLIST": {}
+            },
+            "DEVICE_TYPE": "CDB"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "CDBMPM",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "CUSTOMERS": {}
+            },
+            "DEVICE_TYPE": "CDBMPM"
+        },
+        {
+            "COMMAND_COUNTS": {
+                "AUC": {},
+                "CDMA": {}
+            },
+            "DEVICE": "CDMA01",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {
+                "AUC": {
+                    "AC_DATA": {},
+                    "ESN_AKEY_DATA": {}
+                },
+                "CDMA": {
+                    "CEPGRP_DATA": {},
+                    "SUBSCRIBER_DATA": {}
+                }
+            },
+            "DEVICE_TYPE": "CDMA"
+        },
+        {
+            "COMMAND_COUNTS": {
+                "AUC": {},
+                "CDMA": {}
+            },
+            "DEVICE": "CDMA02",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {
+                "AUC": {
+                    "AC_DATA": {},
+                    "ESN_AKEY_DATA": {}
+                },
+                "CDMA": {
+                    "CEPGRP_DATA": {},
+                    "SUBSCRIBER_DATA": {}
+                }
+            },
+            "DEVICE_TYPE": "CDMA"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "CNSDI",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "CNSDI"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "CPTTAD",
+            "DEVICE_EMULATOR_VERSION": "1.1",
+            "DEVICE_STATE": {
+                "ENTERPRISES": {},
+                "ENTERPRISE_USERS": {},
+                "GROUPS": {},
+                "SUBSCRIBERS": {}
+            },
+            "DEVICE_TYPE": "CPTTAD"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "CPTTWS",
+            "DEVICE_EMULATOR_VERSION": "1.1",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "CPTTWS"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "CVCIF",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "CVCIF"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "DLGW",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "DLGW"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "DPI",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "DPI"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "EMAIMS",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "EMAIMS"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "ENUM",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "ENUM"
+        },
+        {
+            "COMMAND_COUNTS": {
+                "UPDATES[MODIFYING]": 1
+            },
+            "DEVICE": "GEMOTA",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {
+                "ACTIVE_LABEL": 1,
+                "ICCID": "",
+                "IMSI": "505010393000391",
+                "MSISDN": "61437111171",
+                "PROFILE_NAME": "",
+                "SERIAL_NUMBER": ""
+            },
+            "DEVICE_TYPE": "GEMOTA"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "GOODWS",
+            "DEVICE_EMULATOR_VERSION": "1.1",
+            "DEVICE_STATE": {
+                "GoodLink Users": {}
+            },
+            "DEVICE_TYPE": "GOODWS"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "GSM001",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "AUC_DATA": {
+                    "A3A8IND": "A",
+                    "A4IND": 0,
+                    "EKI": "2A3A875A967188B94A2E1F20CE5EFD04",
+                    "FSETIND": "",
+                    "IMSI": "505010393000391",
+                    "KIND": 101
+                },
+                "EQOS_DATA": {},
+                "GSM_SUBSCRIBER_DATA": {}
+            },
+            "DEVICE_TYPE": "GSM"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "GSM002",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "AUC_DATA": {
+                    "A3A8IND": "A",
+                    "A4IND": 0,
+                    "EKI": "2A3A875A967188B94A2E1F20CE5EFD04",
+                    "FSETIND": "",
+                    "IMSI": "505010393000391",
+                    "KIND": 101
+                },
+                "EQOS_DATA": {},
+                "GSM_SUBSCRIBER_DATA": {}
+            },
+            "DEVICE_TYPE": "GSM"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "GSM003",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "AUC_DATA": {},
+                "EQOS_DATA": {},
+                "GSM_SUBSCRIBER_DATA": {
+                    "AMSISDN_DATA": {},
+                    "IMSI": "505010393000391",
+                    "MSISDN": "61437111171",
+                    "NAM": 0,
+                    "PACKET_PROTOCOL_CONTEXT_DATA_R10": [
+                        {
+                            "APID": 247,
+                            "EPDPIND": false,
+                            "EQOSID": 22,
+                            "PDPADD": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "PDPCH": "",
+                            "PDPTY": "IPV4",
+                            "VPAA": false
+                        },
+                        {
+                            "APID": 10,
+                            "EPDPIND": true,
+                            "EQOSID": 15,
+                            "PDPADD": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "PDPCH": "",
+                            "PDPTY": "IPV4",
+                            "VPAA": false
+                        },
+                        {
+                            "APID": 56,
+                            "EPDPIND": true,
+                            "EQOSID": 15,
+                            "PDPADD": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "PDPCH": "",
+                            "PDPTY": "IPV4",
+                            "VPAA": false
+                        },
+                        {
+                            "APID": 2,
+                            "EPDPIND": true,
+                            "EQOSID": 8,
+                            "PDPADD": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "PDPCH": "",
+                            "PDPTY": "IPV4",
+                            "VPAA": false
+                        },
+                        {
+                            "APID": 1,
+                            "EPDPIND": true,
+                            "EQOSID": 22,
+                            "PDPADD": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "PDPCH": "",
+                            "PDPTY": "IPV4",
+                            "VPAA": false
+                        },
+                        {
+                            "APID": 31,
+                            "EPDPADD": [
+                                0,
+                                0,
+                                0,
+                                0
+                            ],
+                            "EPDPIND": false,
+                            "EQOSID": 5,
+                            "PDPADD_IPV6": "",
+                            "PDPCH": "",
+                            "PDPTY": "IPV6",
+                            "VPAA": false
+                        }
+                    ],
+                    "PERMANENT_SUBSCRIBER_DATA": {
+                        "BAIC": 1,
+                        "BAOC": 1,
+                        "BICRO": 1,
+                        "BOIC": 1,
+                        "BOIEXH": 1,
+                        "CAT": 10,
+                        "CAW": 1,
+                        "CFB": 1,
+                        "CFNRC": 1,
+                        "CFNRY": 1,
+                        "CFU": 1,
+                        "CLIP": 1,
+                        "CLIR": 1,
+                        "DBSG": 1,
+                        "HOLD": 1,
+                        "ICS": 1,
+                        "MPTY": 1,
+                        "OBO": 2,
+                        "OBR": 1,
+                        "OFA": 2,
+                        "OICK": 885,
+                        "PAI": 1,
+                        "RSA": 2,
+                        "SCHAR": "8-0",
+                        "SOCB": 1,
+                        "SOCFRY": 1,
+                        "SOCLIR": 2,
+                        "SOSDCF": 7,
+                        "TICK": 885,
+                        "TS11": 1,
+                        "TS21": 1,
+                        "TS22": 1
+                    },
+                    "SUPPLEMENTARY_SERVICE_DATA": {
+                        "CAW": {
+                            "BSG": "TS10",
+                            "STATUS": "ACTIVE-OP"
+                        },
+                        "DCF": {
+                            "BSG": "TS10",
+                            "FNUM": "61418707111",
+                            "STATUS": "ACTIVE-OP",
+                            "TIME": 15
+                        }
+                    }
+                }
+            },
+            "DEVICE_TYPE": "GSM"
+        },
+        {
+            "COMMAND_COUNTS": {
+                "BR": {
+                    "UPDATES[MODIFYING]": 1
+                },
+                "SP": {
+                    "UPDATES[MODIFYING]": 1
+                }
+            },
+            "DEVICE": "HIN010",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {
+                "BR": {
+                    "MSISDN": 437111171,
+                    "OBA": 0,
+                    "OBI": 0,
+                    "OBO": 2,
+                    "OBOPRE": 0,
+                    "OBOPRI": 0,
+                    "OSB1": 0,
+                    "OSB2": 0,
+                    "OSB3": 0,
+                    "OSB4": 0
+                },
+                "SP": {
+                    "MSISDN": 437111171,
+                    "SPID": 2,
+                    "TYPE": "g"
+                }
+            },
+            "DEVICE_TYPE": "HIN"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "HIN020",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "HIN"
+        },
+        {
+            "COMMAND_COUNTS": {
+                "SP": {
+                    "UPDATES[MODIFYING]": 1
+                }
+            },
+            "DEVICE": "HIN030",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {
+                "SP": {
+                    "MSISDN": 437111171,
+                    "SPID": 2,
+                    "TYPE": "g"
+                }
+            },
+            "DEVICE_TYPE": "HIN"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "HIND00",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "HIN"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "HIND01",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "HIN"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "HIND02",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "HIN"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "IPWRKS",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "1.7.1.1.1.1.7.3.4.1.6.e164enum.net": {
+                    "enumDn": 17111173,
+                    "enumZoneId": 4,
+                    "naptrFlags": "nu",
+                    "naptrOrder": 10,
+                    "naptrPreference": 10,
+                    "naptrService": "E2U+sip",
+                    "naptrTxt": "!^.*$!sip:+61437111171;npdi;rn=+61-D5344-437-111-171@connect.telstra.com;user=phone!",
+                    "propBlocking": 0
+                }
+            },
+            "DEVICE_TYPE": "IPWRKS"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "JRBT",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "JRBT"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "MACE",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "MACE"
+        },
+        {
+            "COMMAND_COUNTS": {
+                "QUERIES": 2,
+                "UPDATES[MODIFYING]": 1
+            },
+            "DEVICE": "MAINS",
+            "DEVICE_EMULATOR_VERSION": 2,
+            "DEVICE_STATE": {
+                "ALTERNATE_NUMBERS": {},
+                "BAR_CONDITION": "AGE",
+                "CCR": "",
+                "IMSI": "505010393000391",
+                "MPM_ENABLED": "",
+                "MSISDN": "61437111171",
+                "NETWORK_TYPE": "G",
+                "PORTED_CARRIER": "",
+                "PORTED_OUT_FLAG": 0,
+                "PREPAID_CATEGARY": 0,
+                "REDIRECTION_NUMBER": "",
+                "SMSAT_LEVEL": "",
+                "SMSCOL_LEVEL": "",
+                "SMSDR_LEVEL": "",
+                "SMSMBA_LEVEL": "",
+                "SMSPCC_LEVEL": 1,
+                "SMSSAM_LEVEL": 2,
+                "SPID": 2,
+                "SUFFIX": "",
+                "TEMPORARY_DISCONNECT": 0,
+                "TEMPORARY_SUSPEND": 0,
+                "TOGGLE": ""
+            },
+            "DEVICE_TYPE": "MAINS"
+        },
+        {
+            "COMMAND_COUNTS": {
+                "BOSTON": {},
+                "CVCI3": {}
+            },
+            "DEVICE": "MBXMAN",
+            "DEVICE_EMULATOR_VERSION": "2.1",
+            "DEVICE_STATE": {
+                "BOSTON": {},
+                "CVCI3": {}
+            },
+            "DEVICE_TYPE": "CVCI3"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "MDGSM1",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "MDGSM1"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "MDS",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "ABP_PRODUCT": {},
+                "ATTRIBUTES": {},
+                "BATCH_JOB_DETAILS": {},
+                "BATCH_JOB_RECORDS": {},
+                "CANCEL_ORDER": {},
+                "CHAMELEON_PAIRING": {},
+                "DEVICE_RETRIES": {},
+                "ENTERPRISE_ID": {},
+                "ENTERPRISE_ID_NRFNN": {},
+                "FACILITIES": {},
+                "FILE_SEQUENCE_NUMBERS": {},
+                "GENERIC_BATCH_FORWARD_DATA": {},
+                "GROUPS": {},
+                "HYBRID_DEACTIVATIONS": {},
+                "NBN_GROUP_ID": {},
+                "ONEMTA_CUSTOMERS": {},
+                "RESERVED_UID": {},
+                "RETRY_QUEUES": {},
+                "RETRY_STATS": {},
+                "SAPC_RETRY": {},
+                "SERVICE_CAPABILITIES": {
+                    "ATTEMPT_COUNT": 0,
+                    "CREATION_TIME": "2019-04-29 10:05:59.175000",
+                    "CRM_LAST_UPDATE_TIME": "",
+                    "CRM_MICA_UPDATED": "",
+                    "CRM_REQUIRING_UPDATE": 0,
+                    "CRM_SIEBEL_UPDATED": "",
+                    "CRM_UPDATE_RETRY_COUNT": 0,
+                    "LAST_ATTEMPT_TIME": "",
+                    "LAST_FAILURE_CODE": "",
+                    "LAST_FAILURE_TIME": "",
+                    "LAST_REPORT_TIME": "",
+                    "MSISDN": 437111171,
+                    "PREVIOUS_STATUS": "",
+                    "PRIORITY": 0,
+                    "PRODUCT": "VOLTE",
+                    "STATUS": "REPORT"
+                },
+                "SMS_BLACKLIST": {},
+                "UNIQUE_ENTERPRISE_ID": {
+                    "ENTERPRISE_ID": 0
+                },
+                "UNIQUE_UID": {
+                    "ID": 1,
+                    "U_ID": 1
+                }
+            },
+            "DEVICE_TYPE": "MDS"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "MEWS",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "MEWS"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "MICAPR",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "MICAPR"
+        },
+        {
+            "COMMAND_COUNTS": {
+                "UPDATES[MODIFYING]": 1
+            },
+            "DEVICE": "MINT01",
+            "DEVICE_EMULATOR_VERSION": 2,
+            "DEVICE_STATE": {
+                "MSISDN": 437111171,
+                "NUMBER": "505010393000391",
+                "TYPE": "I"
+            },
+            "DEVICE_TYPE": "MINT"
+        },
+        {
+            "COMMAND_COUNTS": {
+                "UPDATES[MODIFYING]": 1
+            },
+            "DEVICE": "MINT02",
+            "DEVICE_EMULATOR_VERSION": 2,
+            "DEVICE_STATE": {
+                "MSISDN": 437111171,
+                "NUMBER": "505010393000391",
+                "TYPE": "I"
+            },
+            "DEVICE_TYPE": "MINT"
+        },
+        {
+            "COMMAND_COUNTS": {
+                "QUERIES": 2,
+                "UPDATES[MODIFYING]": 1
+            },
+            "DEVICE": "MINT03",
+            "DEVICE_EMULATOR_VERSION": 2,
+            "DEVICE_STATE": {
+                "MSISDN": 437111171,
+                "NUMBER": "505010393000391",
+                "TYPE": "I"
+            },
+            "DEVICE_TYPE": "MINT"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "MINX",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "MINX"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "MLM",
+            "DEVICE_EMULATOR_VERSION": "1.1",
+            "DEVICE_STATE": {
+                "USERS": {}
+            },
+            "DEVICE_TYPE": "MLM"
+        },
+        {
+            "COMMAND_COUNTS": {
+                "ERRORS": 1
+            },
+            "DEVICE": "MMSC",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {
+                "61437111171": {
+                    "CountryCode": 61,
+                    "DefaultFromAddress": "61437111171/TYPE=PLMN@mmsc.telstra.com",
+                    "ExternalSubscriberId": "61437111171",
+                    "HandsetType": "other_mms_phone",
+                    "InternetPassword": 223875,
+                    "InternetUsername": "61437111171",
+                    "IsPrePaid": false,
+                    "MMSAddress": "61437111171/TYPE=PLMN@mmsc.telstra.com",
+                    "MmsComposeEnabled": true,
+                    "MmsCopyToSentItems": false,
+                    "MmsMsgDeliveryRepEnabled": 1,
+                    "MmsReplyEnabled": 1,
+                    "MmsSendToMbx": 0,
+                    "OperatorCode": 437,
+                    "PlmnName": "oper1",
+                    "ReceiveMmsEnabled": true,
+                    "SendMmsEnabled": true,
+                    "SubscriberName": "61437111171",
+                    "SubscriberServicePackageId": 20,
+                    "TelephoneNumber": "61437111171"
+                }
+            },
+            "DEVICE_TYPE": "MMSC"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "MMSMPM",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "LISTS": {},
+                "MSISDNS": {},
+                "POLICIES": {},
+                "PROFILE": {},
+                "TIMESLOTS": {}
+            },
+            "DEVICE_TYPE": "MMSMPM"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "MOBUM",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "MOBUM"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "MOBUMR",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "MOBUMR"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "MPMCOR",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {
+                "Subscribers": {}
+            },
+            "DEVICE_TYPE": "MPMCOR"
+        },
+        {
+            "COMMAND_COUNTS": {
+                "QUERIES": 2,
+                "UPDATES[MODIFYING]": 6
+            },
+            "DEVICE": "MSDB01",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {
+                "MSISDN": 437111171,
+                "SERVICE_GROUP_PAIR": {
+                    "1118": 1,
+                    "2001": 88500,
+                    "2002": 88500,
+                    "2003": 0,
+                    "55": 1,
+                    "960": 1
+                }
+            },
+            "DEVICE_TYPE": "MSDB"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "MTASUT",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "MTASUT"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "NEMDMS",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "DEVICE_DETAILS": {},
+                "SUBSCRIBER_DETAILS": {}
+            },
+            "DEVICE_TYPE": "NEMDMS"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "NEMIP",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "NEMIP"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "NETSWP",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {
+                "client": {},
+                "group": {},
+                "policy": {}
+            },
+            "DEVICE_TYPE": "NETSWP"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "OCSIA",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "ABP": {},
+                "ABP_PROD_DETAILS": {}
+            },
+            "DEVICE_TYPE": "OCSIA"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "OMFUL",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "OMFUL"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "OTAF",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "OTAF"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "PCRLD1",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": [
+                {
+                    "ATTRIBUTES": {
+                        "EPC-SubscriberId": "505010393000391",
+                        "EPC-SubscriberTrafficId": 1,
+                        "createTimestamp": "20190429000558.937Z",
+                        "creatorsName": "cn=Internal Root User",
+                        "entryDN": "epc-subscribertrafficid=0000000001,epc-subscriberidentitiesname=epc-subscriberidentities,applicationname=epc-epcnode,nodename=npy1",
+                        "entryUUID": "7ddbcfca-1919-4b6e-996a-ea1825870ada",
+                        "modifiersName": "cn=Internal Root User",
+                        "modifyTimestamp": "20190429000558.937Z",
+                        "objectClass": "EPC-SubscriberIdentity",
+                        "subschemaSubentry": "cn=schema"
+                    },
+                    "DN": "EPC-SubscriberTrafficId=0000000001,EPC-SubscriberIdentitiesName=EPC-SubscriberIdentities,applicationName=EPC-EpcNode,nodeName=NPY1"
+                },
+                {
+                    "ATTRIBUTES": {
+                        "EPC-SubscriberId": "505010393000391",
+                        "EPC-SubscriberTrafficId": "61437111171",
+                        "createTimestamp": "20190429000558.937Z",
+                        "creatorsName": "cn=Internal Root User",
+                        "entryDN": "epc-subscribertrafficid=61437111171,epc-subscriberidentitiesname=epc-subscriberidentities,applicationname=epc-epcnode,nodename=npy1",
+                        "entryUUID": "b8b09c9c-556d-462a-a273-d92be5718ebd",
+                        "modifiersName": "cn=Internal Root User",
+                        "modifyTimestamp": "20190429000558.937Z",
+                        "objectClass": "EPC-SubscriberIdentity",
+                        "subschemaSubentry": "cn=schema"
+                    },
+                    "DN": "EPC-SubscriberTrafficId=61437111171,EPC-SubscriberIdentitiesName=EPC-SubscriberIdentities,applicationName=EPC-EpcNode,nodeName=NPY1"
+                },
+                {
+                    "ATTRIBUTES": [
+                        {
+                            "objectClass": "EPC-Subscriber"
+                        },
+                        {
+                            "EPC-TrafficIds": "61437111171"
+                        },
+                        {
+                            "EPC-TrafficIds": 1
+                        },
+                        {
+                            "EPC-OperatorSpecificInfo": "spid:0002"
+                        },
+                        {
+                            "EPC-OperatorSpecificInfo": "paymenttype:POSTPAID"
+                        },
+                        {
+                            "EPC-GroupIds": "DEFAULT:10000"
+                        },
+                        {
+                            "EPC-GroupIds": "MMS:2000"
+                        },
+                        {
+                            "EPC-GroupIds": "REDEMPTION:4000"
+                        },
+                        {
+                            "EPC-GroupIds": "VOLTE:5000"
+                        },
+                        {
+                            "EPC-SubscriberId": "505010393000391"
+                        },
+                        {
+                            "entryDN": "epc-subscriberid=505010393000391,epc-subscribersname=epc-subscribers,applicationname=epc-epcnode,nodename=npy1"
+                        },
+                        {
+                            "entryUUID": "8a428018-898f-410a-b4d8-edb60fb85e4c"
+                        },
+                        {
+                            "subschemaSubentry": "cn=schema"
+                        },
+                        {
+                            "creatorsName": "cn=Internal Root User"
+                        },
+                        {
+                            "createTimestamp": "20190429000558.935Z"
+                        },
+                        {
+                            "modifiersName": "cn=Internal Root User"
+                        },
+                        {
+                            "modifyTimestamp": "20190429000559.189Z"
+                        }
+                    ],
+                    "DN": "EPC-SubscriberId=505010393000391,EPC-SubscribersName=EPC-Subscribers,applicationName=EPC-EpcNode,nodeName=NPY1"
+                },
+                {
+                    "ATTRIBUTES": {
+                        "EPC-Name": "EPC-SubscriberQualification",
+                        "EPC-SubscriberQualificationData": "CustomerId:0000000001",
+                        "createTimestamp": "20190429000558.939Z",
+                        "creatorsName": "cn=Internal Root User",
+                        "entryDN": "epc-name=epc-subscriberqualification,epc-subscriberid=505010393000391,epc-subscribersname=epc-subscribers,applicationname=epc-epcnode,nodename=npy1",
+                        "entryUUID": "9035458c-a0b8-48e3-be03-7a8ad70bfc86",
+                        "modifiersName": "cn=Internal Root User",
+                        "modifyTimestamp": "20190429000558.939Z",
+                        "objectClass": "EPC-SubscriberQualification",
+                        "subschemaSubentry": "cn=schema"
+                    },
+                    "DN": "EPC-Name=EPC-SubscriberQualification,EPC-SubscriberId=505010393000391,EPC-SubscribersName=EPC-Subscribers,applicationName=EPC-EpcNode,nodeName=NPY1"
+                }
+            ],
+            "DEVICE_TYPE": "PCRLDP"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "PCRLD2",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": [
+                {
+                    "ATTRIBUTES": {
+                        "EPC-SubscriberId": "505010393000391",
+                        "EPC-SubscriberTrafficId": 1,
+                        "createTimestamp": "20190429000558.941Z",
+                        "creatorsName": "cn=Internal Root User",
+                        "entryDN": "epc-subscribertrafficid=0000000001,epc-subscriberidentitiesname=epc-subscriberidentities,applicationname=epc-epcnode,nodename=npy2",
+                        "entryUUID": "606aa2d6-aa76-4313-9ae3-b38c285de7b2",
+                        "modifiersName": "cn=Internal Root User",
+                        "modifyTimestamp": "20190429000558.941Z",
+                        "objectClass": "EPC-SubscriberIdentity",
+                        "subschemaSubentry": "cn=schema"
+                    },
+                    "DN": "EPC-SubscriberTrafficId=0000000001,EPC-SubscriberIdentitiesName=EPC-SubscriberIdentities,applicationName=EPC-EpcNode,nodeName=NPY2"
+                },
+                {
+                    "ATTRIBUTES": {
+                        "EPC-SubscriberId": "505010393000391",
+                        "EPC-SubscriberTrafficId": "61437111171",
+                        "createTimestamp": "20190429000558.941Z",
+                        "creatorsName": "cn=Internal Root User",
+                        "entryDN": "epc-subscribertrafficid=61437111171,epc-subscriberidentitiesname=epc-subscriberidentities,applicationname=epc-epcnode,nodename=npy2",
+                        "entryUUID": "1656a0ae-68c5-4379-a1bd-cd403acb96b4",
+                        "modifiersName": "cn=Internal Root User",
+                        "modifyTimestamp": "20190429000558.941Z",
+                        "objectClass": "EPC-SubscriberIdentity",
+                        "subschemaSubentry": "cn=schema"
+                    },
+                    "DN": "EPC-SubscriberTrafficId=61437111171,EPC-SubscriberIdentitiesName=EPC-SubscriberIdentities,applicationName=EPC-EpcNode,nodeName=NPY2"
+                },
+                {
+                    "ATTRIBUTES": [
+                        {
+                            "objectClass": "EPC-Subscriber"
+                        },
+                        {
+                            "EPC-TrafficIds": "61437111171"
+                        },
+                        {
+                            "EPC-TrafficIds": 1
+                        },
+                        {
+                            "EPC-OperatorSpecificInfo": "spid:0002"
+                        },
+                        {
+                            "EPC-OperatorSpecificInfo": "paymenttype:POSTPAID"
+                        },
+                        {
+                            "EPC-GroupIds": "DEFAULT:10000"
+                        },
+                        {
+                            "EPC-GroupIds": "MMS:2000"
+                        },
+                        {
+                            "EPC-GroupIds": "REDEMPTION:4000"
+                        },
+                        {
+                            "EPC-GroupIds": "VOLTE:5000"
+                        },
+                        {
+                            "EPC-SubscriberId": "505010393000391"
+                        },
+                        {
+                            "entryDN": "epc-subscriberid=505010393000391,epc-subscribersname=epc-subscribers,applicationname=epc-epcnode,nodename=npy2"
+                        },
+                        {
+                            "entryUUID": "0ac4aec7-a1f0-46ff-a5dc-995db100d31a"
+                        },
+                        {
+                            "subschemaSubentry": "cn=schema"
+                        },
+                        {
+                            "creatorsName": "cn=Internal Root User"
+                        },
+                        {
+                            "createTimestamp": "20190429000558.940Z"
+                        },
+                        {
+                            "modifiersName": "cn=Internal Root User"
+                        },
+                        {
+                            "modifyTimestamp": "20190429000559.190Z"
+                        }
+                    ],
+                    "DN": "EPC-SubscriberId=505010393000391,EPC-SubscribersName=EPC-Subscribers,applicationName=EPC-EpcNode,nodeName=NPY2"
+                },
+                {
+                    "ATTRIBUTES": {
+                        "EPC-Name": "EPC-SubscriberQualification",
+                        "EPC-SubscriberQualificationData": "CustomerId:0000000001",
+                        "createTimestamp": "20190429000558.942Z",
+                        "creatorsName": "cn=Internal Root User",
+                        "entryDN": "epc-name=epc-subscriberqualification,epc-subscriberid=505010393000391,epc-subscribersname=epc-subscribers,applicationname=epc-epcnode,nodename=npy2",
+                        "entryUUID": "543f61a3-09ce-489e-9ecd-e21d7abb8526",
+                        "modifiersName": "cn=Internal Root User",
+                        "modifyTimestamp": "20190429000558.942Z",
+                        "objectClass": "EPC-SubscriberQualification",
+                        "subschemaSubentry": "cn=schema"
+                    },
+                    "DN": "EPC-Name=EPC-SubscriberQualification,EPC-SubscriberId=505010393000391,EPC-SubscribersName=EPC-Subscribers,applicationName=EPC-EpcNode,nodeName=NPY2"
+                }
+            ],
+            "DEVICE_TYPE": "PCRLDP"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "PCRRS1",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "505010393000391": {
+                    "dataplans": {
+                        "DEFAULT": {
+                            "priority": 10000
+                        },
+                        "MMS": {
+                            "priority": 2000
+                        },
+                        "REDEMPTION": {
+                            "priority": 4000
+                        },
+                        "VoLTE": {
+                            "priority": 5000
+                        }
+                    },
+                    "operatorSpecificInfos": {
+                        "paymenttype": "POSTPAID",
+                        "spid": 2
+                    },
+                    "staticQualification": {
+                        "customerId": 1
+                    },
+                    "trafficIds": {
+                        "msisdn": "61437111171",
+                        "uid": 1
+                    }
+                }
+            },
+            "DEVICE_TYPE": "PCRRST"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "PCRRS2",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "505010393000391": {
+                    "dataplans": {
+                        "DEFAULT": {
+                            "priority": 10000
+                        },
+                        "MMS": {
+                            "priority": 2000
+                        },
+                        "REDEMPTION": {
+                            "priority": 4000
+                        },
+                        "VoLTE": {
+                            "priority": 5000
+                        }
+                    },
+                    "operatorSpecificInfos": {
+                        "paymenttype": "POSTPAID",
+                        "spid": 2
+                    },
+                    "staticQualification": {
+                        "customerId": 1
+                    },
+                    "trafficIds": {
+                        "msisdn": "61437111171",
+                        "uid": 1
+                    }
+                }
+            },
+            "DEVICE_TYPE": "PCRRST"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "PDB",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "PDB"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "PRBT",
+            "DEVICE_EMULATOR_VERSION": "1.1",
+            "DEVICE_STATE": {
+                "PROFILES": {}
+            },
+            "DEVICE_TYPE": "PRBT"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "PRPAID",
+            "DEVICE_EMULATOR_VERSION": 3,
+            "DEVICE_STATE": {
+                "POSTPAID_SUBSCRIBER_DBASE": {},
+                "PRPAID_SUBSCRIBER_DBASE": {}
+            },
+            "DEVICE_TYPE": "PRPAID"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "PTT",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {
+                "Folders": {
+                    "ROOT": {
+                        "G-UPF": "pocgts-0.opnet.telstra.com.au",
+                        "GA-UPF": "pocgts-1.opnet.telstra.com.au",
+                        "SGMF": "pocaus-0.opnet.telstra.com.au",
+                        "U-UPF": "pocuts-0.opnet.telstra.com.au",
+                        "adm_state": "disabled",
+                        "folder_URL": "ROOT",
+                        "folder_type": "root",
+                        "max_att_per_user": 50,
+                        "max_att_users_per_group": 50,
+                        "max_groups": 50,
+                        "max_users": 65000,
+                        "name": "ROOT",
+                        "parent_folder_URL": "",
+                        "source_folder": {},
+                        "source_user": {}
+                    }
+                },
+                "Groups": {},
+                "Management Users": {
+                    "racemed": {
+                        "MU_rights": "none",
+                        "MU_rights_unlimited": true,
+                        "adm_state": "disabled",
+                        "allowed_target_folder": {},
+                        "auth_type": "normal",
+                        "domain_name": [
+                            {}
+                        ],
+                        "move_rights": false,
+                        "pwd": "model1"
+                    }
+                },
+                "Users": {}
+            },
+            "DEVICE_TYPE": "PTT"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "SDF",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "SDF"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "SESTRK",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "SERVICE_DETAILS": {},
+                "WIFI_CREDENTIALS": {}
+            },
+            "DEVICE_TYPE": "SESTRK"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "SIEBEL",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "SIEBEL"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "SMSMPM",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "LISTS": {},
+                "MSISDNS": {},
+                "POLICIES": {},
+                "PROFILES": {},
+                "TIMESLOTS": {}
+            },
+            "DEVICE_TYPE": "SMSMPM"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "SMS_1",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "SMS_MAS"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "STOA",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "STOA"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "STOA2",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "STOA"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "TBGSMS",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "TBG"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "TDSDI",
+            "DEVICE_EMULATOR_VERSION": 2,
+            "DEVICE_STATE": {
+                "DISTRIBUTOR_DBASE": {},
+                "MISC_DATA": {
+                    "NEXT_UID": 1
+                },
+                "RESERVED_UID_DBASE": {},
+                "SUBSCRIBER_DBASE": {},
+                "WLL SUBSCRIBER_DBASE": {}
+            },
+            "DEVICE_TYPE": "TDSDI"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "TRL001",
+            "DEVICE_EMULATOR_VERSION": "1.1",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "TRILOG"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "TRL002",
+            "DEVICE_EMULATOR_VERSION": "1.1",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "TRILOG"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "TRL003",
+            "DEVICE_EMULATOR_VERSION": "1.1",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "TRILOG"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "TSDP",
+            "DEVICE_EMULATOR_VERSION": "1.1",
+            "DEVICE_STATE": {
+                "CorporateSubscriber Table": {},
+                "CustomerSegment Table": {},
+                "Login Table": {},
+                "ServicePackage Table": {},
+                "User Table": {}
+            },
+            "DEVICE_TYPE": "TSDP"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "UDC001",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "AUC_DATA": {},
+                "EQOS_DATA": {},
+                "GSM_SUBSCRIBER_DATA": {}
+            },
+            "DEVICE_TYPE": "GSM"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "UDC002",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {
+                "AUC_DATA": {},
+                "EQOS_DATA": {},
+                "GSM_SUBSCRIBER_DATA": {}
+            },
+            "DEVICE_TYPE": "GSM"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "UDCLNP",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "UDCLNP"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "UDCLNR",
+            "DEVICE_EMULATOR_VERSION": "",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "UDCLNR"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "VAD01",
+            "DEVICE_EMULATOR_VERSION": 1,
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "VAD"
+        },
+        {
+            "COMMAND_COUNTS": {},
+            "DEVICE": "WVBC",
+            "DEVICE_EMULATOR_VERSION": "1.1",
+            "DEVICE_STATE": {},
+            "DEVICE_TYPE": "INFNET"
+        }
+    ]
+}
