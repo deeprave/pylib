@@ -26,12 +26,16 @@ else:
 
 
 def is_unicode(value):
-    return isinstance(value, unicode) if PY2 else False
+    return isinstance(value, unicode)
 
 
-def from_unicode(value):
-    return value.encode('utf-8') if is_unicode(value) else value
+def from_unicode(value, encoding='utf-8'):
+    if not is_unicode(value):
+        return value
+    return value.decode(encoding)
 
 
 def to_unicode(value, encoding='utf-8'):
-    return value if is_unicode(value) else value.decode(encoding)
+    if is_unicode(value):
+        return value
+    return value.decode(encoding)

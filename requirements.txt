@@ -1,4 +1,7 @@
+beautifulsoup4
+jinja2
 PyYAML
 future
 six
 pytest
+lxml

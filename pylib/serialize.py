@@ -48,11 +48,15 @@ def serialize_obj(obj, empty_ok=False):
                     result[k] = r
     elif hasattr(obj, '__slots__') and obj.__slots__:
         for k in obj.__slots__:
-            v = getattr(obj, k)
-            if allow_empty(v):
-                r = serialize_obj(v, empty_ok=empty_ok)
-                if allow_empty(r):
-                    result[k] = r
+            try:
+                v = getattr(obj, k)
+                if allow_empty(v):
+                    r = serialize_obj(v, empty_ok=empty_ok)
+                    if allow_empty(r):
+                        result[k] = r
+            except AttributeError:
+                result = str(obj)
+                break
     elif isinstance(obj, datetime):
         result = obj.isoformat()
     else:
