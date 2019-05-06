@@ -119,8 +119,6 @@ FIXTURE = """
 }
 """
 
-FIXTURE_FILE = os.path.join(os.path.dirname(__file__), 'fixtures', 'statefile.state')
-
 def test_section_parser():
     parser = Parser(FIXTURE)
     parsed = parser.parse()
@@ -129,16 +127,6 @@ def test_section_parser():
     section1 = parsed['SECTION1']
     assert isinstance(section1, list)
     assert len(section1) == 2
-
-
-def test_file_parser():
-    parser = Parser(source=FIXTURE_FILE)
-    parsed = parser.parse()
-    assert isinstance(parsed, dict)
-    assert len(parsed) == 1
-    assert 'DEVICES' in parsed
-    devices = parsed['DEVICES']
-
 
 def test_bacon_parser():
     bacon = Bacon(FIXTURE)
@@ -152,21 +140,6 @@ def test_bacon_parser():
         assert v['DEVICE'] == k
 
 
-def test_bacon_file_parser():
-    bacon = Bacon(source=FIXTURE_FILE)
-    parsed = bacon.parse()
-    assert isinstance(parsed, dict)
-    assert len(parsed) == 1
-    assert 'DEVICES' in parsed
-    devices = parsed['DEVICES']
-    assert isinstance(devices, list)
-    parsed = bacon.normalise_devices()
-    devices = parsed['DEVICES']
-    assert isinstance(devices, dict)
-    for k, v in devices.items():
-        assert v['DEVICE'] == k
-
-
 def test_bacon_json():
     bacon = Bacon(FIXTURE)
     bacon.normalise({'SECTION1': 'DEVICE'})
@@ -174,9 +147,3 @@ def test_bacon_json():
     jstring = bacon.json(indent=2, sort_keys=True)
     assert isinstance(jstring, string_types)
 
-
-def test_bacon_file_json():
-    bacon = Bacon(source=FIXTURE_FILE)
-    bacon.normalise_devices()
-    jstring = bacon.json(indent=2, sort_keys=True)
-    assert isinstance(jstring, string_types)
