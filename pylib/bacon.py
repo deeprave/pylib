@@ -4,17 +4,21 @@ BACON configuration parser
 """
 from __future__ import unicode_literals
 
+import logging
 import os
 import json
 import jsonpath_rw_ext as jsonpath
+from dictdiffer import diff, patch, are_different
 
+from pylib.cleaner import cleaner
 from pylib.pyver import *
 
 
 __all__ = (
     'Parser',
     'Bacon',
-    'MatchType'
+    'MatchType',
+    'Delta',
 )
 
 
@@ -492,15 +496,19 @@ class Bacon(object):
     def __init__(self, string=None, source=None, encoding=None):
         self.parser = Parser(string=string, source=source, encoding=encoding)
         self.parsed = None
+        self.normalised = False
 
-    def parse(self, string=None, file=None):
+    def parse(self, string=None, file=None, normalise=False):
         if not self.parsed:
             self.parsed = self.parser.parse(string=string, file=file)
+        if normalise and not self.normalised:
+            self.parsed = self.normalise_devices()
+            self.normalised = True
         return self.parsed
 
-    def normalise_devices(self):
-        """typical for state files"""
-        return self.normalise({'DEVICES':'DEVICE'})
+    def patch(self, delta):
+        self.parse()
+        return self.parsed if not delta else patch(delta, self.parsed, in_place=True)
 
     def json(self, **kwargs):
         parsed = self.parse()
@@ -574,5 +582,67 @@ class Bacon(object):
         self.parsed = parsed
         return parsed
 
+    DEVICE_SPEC = {'DEVICES':'DEVICE'}
+
+    def normalise_devices(self):
+        """typical for state files"""
+        return self.normalise(self.DEVICE_SPEC)
+
     def __repr__(self):
         return '<Bacon {} len={}> at 0x{:x}'.format(self.parser.basename, self.parser.length, id(self))
+
+
+def clean_counts(value):
+    return value is not None and value != 'COMMAND_COUNTS'
+
+
+class Delta(object):
+
+    def __init__(self, original, changed, cleaner=None):
+        self.files = [None, None]
+        self.bacon = [None, None]
+        self.parsed = [False, False]
+        for index, nfile in enumerate((original, changed)):
+            if isinstance(nfile, Bacon):
+                self.files[index] = 'file {}'.format(index+1)
+            else:
+                self.files[index] = nfile
+                nfile = Bacon(source=nfile)
+            self.bacon[index] = nfile
+        self._diff = None
+        self._diff_kwargs = dict()
+        self._cleaner = cleaner = clean_counts
+
+    def _parse(self, index):
+        if not self.parsed[index]:
+            logging.debug('Parsing %s', self.files[index])
+            self.parsed[index] = True
+        return self.bacon[index].parse(normalise=True)
+
+    def are_different(self):
+        return are_different(self._parse(0), self._parse(1))
+
+    def diff(self, clean=True, **kwargs):
+        """
+        difference two BACON files
+        :param kwargs: as follows
+        : node=None
+        : ignore=None
+        : path_limit=None
+        : expand=False
+        : tolerance=EPSILON
+        : dot_notation=True
+        :see: dictdiff.diff for details
+        :return:
+        """
+        if self._diff is None or self._diff_kwargs != kwargs:
+            parse = [ self._parse(0), self._parse(1) ]
+            if clean:
+                parse[0] = cleaner(parse[0], self._cleaner, key_only=True)
+                parse[1] = cleaner(parse[1], self._cleaner, key_only=True)
+            self._diff = diff(parse[0], parse[1], **kwargs)
+            self._diff_kwargs = dict(kwargs)
+        if self._diff:
+            return [item for item in self._diff]
+        return None
+
