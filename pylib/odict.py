@@ -1,5 +1,5 @@
 """
-Case insensitive dict
+Ordered dictionary
 """
 from .pyver import PY36
 
@@ -9,7 +9,7 @@ _D = object()
 if PY36:
 
     """
-    Python 3.6+ supports sorted dictionaries so we just overlay some additional functionality:
+    Python 3.6+ supports ordered dictionaries natively so we just overlay some additional functionality:
         - ability to accept multiple dicts as initializers
         - ability to accept (ordered) args containing (key, value) tuples (a list/tuple
           of same is already supported by dict
