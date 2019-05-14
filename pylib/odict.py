@@ -182,11 +182,17 @@ else:
         def keys(self):
             return self._keys_[:]
 
+        iterkeys = keys
+
         def items(self):
             return [(key, dict.__getitem__(self, key)) for key in self._keys_]
 
+        iteritems = items
+
         def values(self):
             return [dict.__getitem__(self, key) for key in self._keys_]
+
+        itervalues = values
 
         def copy(self):
             """ normal dict.copy() won't work, need to order the tuples """
