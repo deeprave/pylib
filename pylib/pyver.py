@@ -32,7 +32,7 @@ def is_unicode(value):
 def from_unicode(value, encoding='utf-8'):
     if not is_unicode(value):
         return value
-    return value.decode(encoding)
+    return value.encode('ascii', 'ignore').decode(encoding)
 
 
 def to_unicode(value, encoding='utf-8'):
