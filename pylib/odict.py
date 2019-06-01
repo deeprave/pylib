@@ -112,7 +112,7 @@ else:
                         for key, value in arg.items():
                             self.__setitem__(key, value)
                     elif isinstance(arg, (tuple, list, set)) or hasattr(arg, '__iter__'):
-                        if len(arg) == 2 and not isinstance(arg[0], (list, tuple, set)):
+                        if hasattr(arg, '__len__') and len(arg) == 2 and not isinstance(arg[0], (list, tuple, set)):
                             self.__setitem__(*arg)
                         else:
                             for (key, value) in arg:
