@@ -1,17 +1,24 @@
 # -*- coding: utf-8 -*-
 """
 BACON configuration parser
+This is a simplistic implementation that does not support many of the
+directives required for a full configuration data loader.
+It implements enough to handle Mediator state files only.
 """
 from __future__ import unicode_literals
 
 import logging
+import sys
 import os
 import json
+
 import jsonpath_rw_ext as jsonpath
-from dictdiffer import diff, patch, are_different
+# noinspection PyProtectedMember
+from dictdiffer import diff, patch, are_different, EPSILON
 
 from pylib.cleaner import cleaner
-from pylib.pyver import *
+
+byte_types = (bytes, bytearray) if sys.version_info[0] >= 3 else (str,)
 
 
 __all__ = (
@@ -97,7 +104,9 @@ class Parser(object):
     def setup(self, string=None, source=None, encoding=None):
         """
         Set a new string to parse, also resets position to strt
-        :param string: string ot parse
+        :param str string: string to parse
+        :param Any source: file or object with read
+        :param str encoding: encoding to use
         :return: None
 
         Take care of encoding issues right at the start
@@ -212,9 +221,9 @@ class Parser(object):
                 elif ch == '\\':
                     # find backslash
                     ch = self.nextch()
+                    pos = self.index
                     if ch == 'u':
                         # find \uxxxx
-                        pos = self.index
                         nums = self.nextseq(0, 4)
                         # check the four char is num
                         for num in nums:
@@ -471,15 +480,20 @@ class Parser(object):
                 top_level_dict.update(value)
         return top_level_dict
 
+    # noinspection PyShadowingBuiltins
     def parse(self, string=None, file=None):
+        if string is None and file:
+            string = file.read()
         if string is not None:
             self.setup(string=string)
         return self._parse()
 
+    # noinspection PyShadowingBuiltins
     def parsefile(self, file=None):
         return self.parse(file=file)
 
 
+# noinspection PyClassHasNoInit
 class MatchType:
     ABSENT = 'absent'
     PRESENT = 'present'
@@ -498,6 +512,7 @@ class Bacon(object):
         self.parsed = None
         self.normalised = False
 
+    # noinspection PyShadowingBuiltins
     def parse(self, string=None, file=None, normalise=False):
         if not self.parsed:
             self.parsed = self.parser.parse(string=string, file=file)
@@ -559,8 +574,7 @@ class Bacon(object):
             def merge_list(to_merge):
                 result = {}
                 for item in to_merge:
-                    key = item[subkey]
-                    result[key] = item
+                    result[item[subkey]] = item
                 return result
 
             def flatten(element):
@@ -582,7 +596,7 @@ class Bacon(object):
         self.parsed = parsed
         return parsed
 
-    DEVICE_SPEC = {'DEVICES':'DEVICE'}
+    DEVICE_SPEC = {'DEVICES': 'DEVICE'}
 
     def normalise_devices(self):
         """typical for state files"""
@@ -598,7 +612,7 @@ def clean_counts(value):
 
 class Delta(object):
 
-    def __init__(self, original, changed, cleaner=None):
+    def __init__(self, original, changed, cleanfunc=None):
         self.files = [None, None]
         self.bacon = [None, None]
         self.parsed = [False, False]
@@ -611,7 +625,7 @@ class Delta(object):
             self.bacon[index] = nfile
         self._diff = None
         self._diff_kwargs = dict()
-        self._cleaner = cleaner = clean_counts
+        self._cleaner = cleanfunc or clean_counts
 
     def _parse(self, index):
         if not self.parsed[index]:
@@ -620,23 +634,21 @@ class Delta(object):
         return self.bacon[index].parse(normalise=True)
 
     def are_different(self):
-        return are_different(self._parse(0), self._parse(1))
+        tolerance = self._diff_kwargs.get('tolerance', EPSILON)
+        return are_different(self._parse(0), self._parse(1), tolerance)
 
     def diff(self, clean=True, **kwargs):
         """
         difference two BACON files
+        :param bool clean: whether to clean
         :param kwargs: as follows
-        : node=None
-        : ignore=None
-        : path_limit=None
-        : expand=False
-        : tolerance=EPSILON
-        : dot_notation=True
+        : node=None ignore=None path_limit=None
+        : expand=False tolerance=EPSILON dot_notation=True
         :see: dictdiff.diff for details
         :return:
         """
         if self._diff is None or self._diff_kwargs != kwargs:
-            parse = [ self._parse(0), self._parse(1) ]
+            parse = [self._parse(0), self._parse(1)]
             if clean:
                 parse[0] = cleaner(parse[0], self._cleaner, key_only=True)
                 parse[1] = cleaner(parse[1], self._cleaner, key_only=True)
