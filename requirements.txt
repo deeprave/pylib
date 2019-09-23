@@ -1,3 +1,5 @@
+beautifulsoup4
+jinja2
 PyYAML
 six
 dictdiffer
